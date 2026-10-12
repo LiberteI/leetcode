@@ -1,0 +1,21 @@
+# .NET build outputs
+**/bin/
+**/obj/
+
+# Visual Studio and Rider local files
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test and coverage outputs
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# macOS metadata
+.DS_Store
+._*
