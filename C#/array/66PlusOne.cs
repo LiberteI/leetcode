@@ -1,5 +1,5 @@
 public class PlusOne {
-    public int[] Solution(int[] digits) {
+    public int[] PlusOne66(int[] digits) {
         /*
             1. add one to the last digit
             2. sweep across the array from the last digit, if it is 10, add one to the num prior to it.
