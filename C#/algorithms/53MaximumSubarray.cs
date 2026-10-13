@@ -1,3 +1,7 @@
+/*
+    time complexity: O(n): one for loop sweeping all elements
+    space complexity: O(1) fixed amount of vars
+*/
 public class Solution {
     public int MaxSubArray(int[] nums) {
         // optimized algorithm: Kadane’s algorithm

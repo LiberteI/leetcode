@@ -1,3 +1,9 @@
+/*
+    time complexity: O(logn): not all element is swept. the whole array is swept in halves and the rest is ignored
+    space complexity: O(1): there is no array that takes more than constant element.
+
+*/
+
 public class SearchInsertPosition35 {
     public int SearchInsertPosition(int[] nums, int target) {
         /*

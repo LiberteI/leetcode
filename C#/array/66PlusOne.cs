@@ -1,3 +1,7 @@
+/*
+    time complexity: one for loop sweping all elements
+    space complexity: O(n): when there is an array resize, n + 1 items are newly allocated.
+*/
 public class PlusOne {
     public int[] PlusOne66(int[] digits) {
         /*
