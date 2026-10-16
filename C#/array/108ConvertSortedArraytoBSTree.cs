@@ -11,6 +11,13 @@
  *     }
  * }
  */
+
+ /*
+    time: O(n) because all element is reached
+    space: 
+        Build O(Logn): Recursion stack for balanced tree traversal: logn
+        others: O(n) because all elements got copied
+ */
 public class ConvertSortedArraytoBSTree108 {
     public TreeNode SortedArrayToBST(int[] nums) {
         /*
@@ -24,8 +31,34 @@ public class ConvertSortedArraytoBSTree108 {
         return root;
     }
     private void PrintArray(TreeNode root){
-        // traverse from root.
+        /*
+            - take the root node, write its left, right to the array.
+            - recursively take left root node and right node to write in.
+            - base case is when the current root has no children
+        */
+
+        // create a list to store items
+        List<int> list = new List<int>();
+        // recursively call function to 1. store current var. 2. traverse preorderly to use next root
+        Collect(root, list);
+
+        // separate every element with ","
+        Console.WriteLine(string.Join(",", list));
     }
+
+    private void Collect(TreeNode root, List<int> list){
+        // base case
+        if(root == null){
+            return;
+        }
+        // add current root value
+        list.Add(root.val);
+        // add left
+        Collect(root.left, list);
+        // add right
+        Collect(root.right, list);
+    }
+
 
     private TreeNode Build(int[] nums, int leftIdx, int rightIdx){
         // base case: return null
