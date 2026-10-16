@@ -18,6 +18,18 @@
         Build O(Logn): Recursion stack for balanced tree traversal: logn
         others: O(n) because all elements got copied
  */
+
+/*
+      4
+     / \
+    2   6
+   / \
+  1   3
+
+Preorder means: root -> left -> right 4 2 1 3 6
+Inorder means:  left -> root -> right 1 2 3 4 6
+Postorder means:left -> right-> root  1 3 2 6 4
+*/
 public class ConvertSortedArraytoBSTree108 {
     public TreeNode SortedArrayToBST(int[] nums) {
         /*
@@ -51,6 +63,11 @@ public class ConvertSortedArraytoBSTree108 {
         if(root == null){
             return;
         }
+
+        /*
+            change the order of this part will result in different traversal orders
+            currently it is preorder
+        */
         // add current root value
         list.Add(root.val);
         // add left
