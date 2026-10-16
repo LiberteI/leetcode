@@ -29,6 +29,27 @@
 Preorder means: root -> left -> right 4 2 1 3 6
 Inorder means:  left -> root -> right 1 2 3 4 6
 Postorder means:left -> right-> root  1 3 2 6 4
+
+
+list.Add(4);
+// add left
+Collect(2, list);
+    list.Add(2);
+    Collect(1, list)
+        list.Add(1);
+        null
+        null
+    Collect(3, list)
+        list.Add(3);
+        null
+        null
+// add right
+Collect(6, list);
+    list.Add(6);
+    null
+    null
+
+because the program runs top to bottom, preorder is applied.
 */
 public class ConvertSortedArraytoBSTree108 {
     public TreeNode SortedArrayToBST(int[] nums) {
