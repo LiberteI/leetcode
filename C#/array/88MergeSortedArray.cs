@@ -4,6 +4,8 @@
 
     lesson: handle idx out of bound before accessing an array
 */
+
+// *** TWO POINTER ***
 public class MergeSortedArray88 {
     public void Merge(int[] nums1, int m, int[] nums2, int n) {
         /*
