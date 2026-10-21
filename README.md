@@ -10,6 +10,7 @@ Move pointers based on which choice can still improve the answer. For 3Sum, sort
 
 - [11. Container With Most Water](C%23/array/11ContainerWMostWater.cs)
 - [15. 3Sum](C%23/array/15ThreeSum.cs)
+- [16. 3Sum Closest](C%23/array/16ThreeSumClosest.cs)
 - [88. Merge Sorted Array](C%23/array/88MergeSortedArray.cs)
 - [121. Best Time to Buy and Sell Stock](C%23/array/121BestTimeToBuyStock.cs)
 
