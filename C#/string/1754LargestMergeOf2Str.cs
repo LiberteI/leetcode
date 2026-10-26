@@ -1,3 +1,9 @@
+/*
+    Time: O(n^2)
+    Space:O(n)
+
+    note: properly handle equal situation
+*/
 public class LargestMergeOf2Str1754 {
     public string LargestMerge(string word1, string word2) {
         /*
