@@ -1,4 +1,8 @@
 using System.Text.RegularExpressions;
+/*
+    time: O(n)
+    space: O(n): regex and toLowerInvariant create new strings
+*/
 public class ValidPalidrome125 {
     public bool IsPalindrome(string s) {
         /*
