@@ -19,7 +19,7 @@
     time: O(n): if all nodes are appended to the left so every node is reached
     space:O(n): nodes are copied into list
 */
-public class Solution {
+public class BinaryTreeInorderTraversal94 {
     public IList<int> PreorderTraversal(TreeNode root) {
         IList<int> list = new List<int>();
 
