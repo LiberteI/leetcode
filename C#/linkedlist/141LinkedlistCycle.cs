@@ -9,6 +9,14 @@
  *     }
  * }
  */
+/*
+    Time: O(n)
+    space:O(1)
+
+    Space O(n) solution: use HashSet
+
+    note: check node's current nullity before accessing its property.;
+*/
 public class LinkedlistCycle141 {
     public bool HasCycle(ListNode head) {
         /*
